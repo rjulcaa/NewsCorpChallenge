@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoListViewController" customModule="NewsCorpChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="photoListTableView" destination="ZWs-f6-wp8" id="n5R-cI-urJ"/>
+                <outlet property="view" destination="IdU-JG-ENc" id="0dz-iO-X23"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IdU-JG-ENc">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZWs-f6-wp8">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Wyy-Qu-hey"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="My5-lc-5PC"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Kru-GK-yPi"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZWs-f6-wp8" firstAttribute="top" secondItem="Kru-GK-yPi" secondAttribute="top" id="6lb-SV-uN8"/>
+                <constraint firstItem="Kru-GK-yPi" firstAttribute="trailing" secondItem="ZWs-f6-wp8" secondAttribute="trailing" id="bct-P2-eas"/>
+                <constraint firstItem="Kru-GK-yPi" firstAttribute="bottom" secondItem="ZWs-f6-wp8" secondAttribute="bottom" id="nS6-Ae-Yi8"/>
+                <constraint firstItem="ZWs-f6-wp8" firstAttribute="leading" secondItem="Kru-GK-yPi" secondAttribute="leading" id="z4v-bA-uvt"/>
+            </constraints>
+            <point key="canvasLocation" x="-30" y="-116"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
